@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js"></script>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a class="current" href="gallery.html">Gallery</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"><img src="images/image_04.png" width="150%"></a>
+            <div class="dropdown-content">
+              <a href="#">Login</a>
+              <a href="#">Sign Up</a>
+            </div>
+          </li>
+    </ul>
+    <img id="mainlogo" src="images/image_03.png">
+    <p class="title">JUST JWST JOURNAL</p>
+    <p class="clear"></p>
+    <br>
+    <div class="gallery-container">
+        <div class="sub-title-2" href="gallery.html">Image Gallery</div>
+        <hr class="sub-title-hr-2">
+        <p class="clear"></p>
+        <div class="gallery-card">
+            <img class="galleryimage" src="images/image_27.png" onclick="openPopup();showSlides(0)">
+            <img class="galleryimage" src="images/image_31.png" onclick="openPopup();showSlides(1)">
+            <img class="galleryimage" src="images/image_28.png" onclick="openPopup();showSlides(2)">
+            <img class="galleryimage" src="images/image_29.png" onclick="openPopup();showSlides(3)">
+            <img class="galleryimage" src="images/image_32.png" onclick="openPopup();showSlides(4)">
+            <img class="galleryimage" src="images/image_41.png" onclick="openPopup();showSlides(5)">
+        </div>
+    </div>
+    <div id="lightbox" class="popup-images">
+        <span onclick="closePopup()">&times;</span>
+        <img class="slides" src="images/image_27_full.png">
+        <img class="slides" src="images/image_23_full.png">
+        <img class="slides" src="images/image_28_full.png">
+        <img class="slides" src="images/image_29_full.png">
+        <img class="slides" src="images/image_32_full.png">
+        <img class="slides" src="images/image_41_full.png">
+    </div>
+</body>
