@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a class="current" href="contact.html">Contact</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"><img src="images/image_04.png" width="150%"></a>
+            <div class="dropdown-content">
+              <a href="#">Login</a>
+              <a href="#">Sign Up</a>
+            </div>
+          </li>
+    </ul>
+    <img id="mainlogo" src="images/image_03.png">
+    <p class="title">JUST JWST JOURNAL</p>
+    <p class="clear"></p>
+    <br>
+    <div class="contact-form">
+        <p>Contact Us</p>
+        <form name="contact-form" method="get" action="url" onsubmit="return formValidation()">
+            <input type = "text" name = "fname" placeholder="First Name" size = "25" maxlength="25">
+            <input type = "text" name = "lname" placeholder="Last Name" size = "25" maxlength="25"><br><br>
+            <input type = "radio" id = "male" name = "gender" value = "male" checked>Male<br>
+            <input type = "radio" id = "female" name = "gender" value = "female">Female<br>
+            <input type = "radio" id = "other" name = "gender" value = "other">Other<br><br>
+            <label>Which Region Are You From?</label>
+            <select name = "country">
+                <option value = "c1">North America</option>
+                <option value = "c2">South America</option>
+                <option value = "c3">Europe</option>
+                <option value = "c3">Russia</option>
+                <option value = "c3">Middle East</option>
+                <option value = "c3">South Asia</option>
+                <option value = "c3">South East Asia</option>
+                <option value = "c3">East Asia</option>
+                <option value = "c3">Africa</option>
+                <option value = "c3">Australia</option>
+            </select><br><br>
+            <textarea cols=40 rows=20 name = "comments" placeholder="Your Message Here"></textarea><br><br>
+            <input type = "submit" value = "Submit">
+            <input type = "reset">
+        </form>
+    </div><br><br>
+    <div class="footer-container">
+        <img id="footer-logo" src="images/image_35.png">
+        <p id="footer-title">JUST JWST JOURNAL</p>
+        <ul class="footer-list">
+            <li><a href="#">Privacy Policy</a></li><br>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</body>
